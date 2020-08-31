@@ -1,0 +1,121 @@
+/* Google Fonts "Press Start 2P" */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* The code below removes all automatic margin+padding
+to give a clean slate for styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+/* CSS that applies "site-wide" */
+
+body {
+    background: black;
+    font-family: 'Press Start 2P', monospace;
+    color: white;
+    font-size: 14px;
+    height: 100vh;
+}
+
+/* Header CSS */
+
+.header {
+    height: 5vh;
+    padding: 20px 40px;
+}
+
+.header__logo {
+    height: 100%;
+}
+
+.header__nav {
+    float: right;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.nav__item {
+    float: left;
+    padding: 1vh 0.5vw;
+}
+
+.nav__item a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh;
+}
+
+.nav__item a:hover {
+    color: #0f0;
+    background: #0f0;
+}
+
+/* Main CSS */
+
+.main {
+    height: 90vh;
+}
+
+.main__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    margin: 40px;
+    width: 70%
+}
+
+.main__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    border: 10px solid #0f0;
+    padding: 20px;
+    width: 60%;
+    margin: 40px;
+}
+
+.textbox__speech {
+    line-height: 28px;
+}
+
+/* Media query to change layuout from top/bottom 
+to left/right when the screen size is above 1000px */
+
+@media (min-width: 1000px) {
+    .main__left {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .main__right {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+/* Footer CSS */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__text {
+    text-align: center;
+    font-size: 10px;
+    margin: 20px;
+}
